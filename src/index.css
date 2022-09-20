@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Mukta&family=Nunito&family=PT+Serif:ital@1&family=Poppins:wght@100&family=Roboto:wght@100&family=Ubuntu&display=swap");
+
+:root {
+  --light-green: #3ec70b;
+  --light: #f1f1f1;
+  --dark-black: #000000;
+  --light-cream: #f1eee9;
+  --light-blue: #16003b;
+  --white: #ffffff;
+  --grey :#EED6C4;
+  
+}
+body {
+  background-color: var(--light);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Serif", serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0rem;
+  gap: 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--dark-black);
+}
+.item {
+  width: 10rem;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: var(--dark-black);
+  align-self: stretch;
+  text-align: center;
+  padding: 0px 0.5rem;
+  transition: all 0.2s linear;
+}
+.item:hover {
+  background-color: var(--dark-black);
+  color: var(--light-green);
+  box-shadow: 7px 7px 9px var(--light-green);
+  transform: scale(1.2);
+}
+.emoji {
+  font-size: 250%;
+}
+nav {
+  background-color: var(--white);
+  height: 2.5rem;
+  margin-bottom: 00.5rem;
+  padding-left: 1.5rem;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0, 0.4);
+}
+nav > h2 {
+  display: inline;
+}
+
+nav > a {
+  padding-top: 3px;
+  float: right;
+  text-decoration: none;
+  padding-right: 2rem;
+}
+.search{
+    text-align: center;
+    margin: 1rem;
+}
+.search > input{
+    border-radius: 5px;
+    border: 2px solid var(--light-cream);
+    font-size: 130%;
+    margin-bottom:1rem;
+    margin-top: 2rem;
+}
+.no-result{
+    text-align: center;
+}
+.copied,.copied:hover{
+    background-color: var(--grey);
+    color: var(--dark-black);
+}
